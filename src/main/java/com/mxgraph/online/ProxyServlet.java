@@ -63,7 +63,8 @@ public class ProxyServlet extends HttpServlet
 			HttpServletResponse response) throws ServletException, IOException
 	{
 		String urlParam = request.getParameter("url");
-
+		System.out.println(urlParam + "Rahul");
+		
 		if (!"1".equals(System.getenv("ENABLE_DRAWIO_PROXY")))
 		{
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
