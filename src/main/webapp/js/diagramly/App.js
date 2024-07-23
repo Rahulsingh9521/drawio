@@ -5085,7 +5085,8 @@ App.prototype.fileCreated = function(file, libs, replace, done, clibs, success)
 
 	if (clibs != null && clibs.length > 0)
 	{
-		url += '?clibs=' + clibs;
+		//url += '?clibs=' + clibs;
+		url = clibs.slice(1);
 	}
 	
 	url = this.getUrl(url);
